@@ -3,6 +3,7 @@ import sys
 #Name of the Game 
 print "Welcome to CounterCode"
 
+print "Your obective in this game will be to get out of\nthe building to saftey outside the city."  
 
 
 node = None 
