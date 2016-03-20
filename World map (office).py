@@ -20,17 +20,22 @@ class building:
             global node 
             node = globals()[getattr(self, direction)]
             
-            
+#BUILDING
+#THIRD FLOOR            
 main_office = building('Office', 'Papers have been shattered.', None, None, None, None, None,None, None, None)
 elevator = building('', '', None, None, None, None, None,None, None, None)
 room1 = building('', '', None, None, None, None, None,None, None, None)
 stairs  = building ('', '', None, None, None, None, None,None, None, None)
 meeting_room = building('', '', None, None, None, None, None,None, None, None)
 secutary_office = building('', '', None, None, None, None, None,None, None, None)
+
+#SECOND FLOOR
 weapon_room = building('', '', None, None, None, None, None,None, None, None)
 ganiter_room = building('', '', None, None, None, None, None,None, None, None)
 bathroom = building('', '', None, None, None, None, None,None, None, None)
 secret_door = building ('', '', None, None, None, None, None,None, None, None)
+
+#FIRST FLOOR
 
 
 node = main_office 
