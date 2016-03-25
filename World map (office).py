@@ -1,5 +1,4 @@
 import sys
-
 node = None 
 
 class Building:
@@ -26,10 +25,11 @@ class Building:
 #THIRD FLOOR            
 Office = Building("Office", 'Papers have been shattered.', None, None, 'Conference', 'Secutary', None, None, None, None, None, None)
 Conference = Building("Conference Room", 'tables are shattered every where ', None, None, None, 'Elevator', 'Office',None, None, None, None, None)
-Elevator = Building("Elevator", '', None, None, None, None, 'Secutary Desk',None, None, None, None, None)
-Stairs = Building("Stairs", '', None, None, None, None, None,None, None, None, None, None)
+Elevator = Building("Elevator", '', None, 'Elevator2', None, None, 'Secutary Desk',None, None, None, None, None)
+Stairs = Building("Stairs", '', None, 'Stairs1', None, None, None,None, None, None, None, None)
 Secutary = Building("Secutary Desk", '', None, None, 'Elevator', None, None , None, None, None, None, None)
 
+Stairs1 = Building("Stairs", '', None, None, None, None, None,None, None, None, None, None)
 '''#SECOND FLOOR
 weapon_room = building('', '', None, None, None, None, None,None, None, None, None, None)
 secret_door = building('', '', None, None, None, None, None,None, None, None, None, None)
