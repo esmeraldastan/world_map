@@ -1,4 +1,5 @@
 import sys
+
 node = None 
 
 class Building:
@@ -20,10 +21,13 @@ class Building:
     def move(self, direction):
         global node 
         node = globals()[getattr(self, direction)]
-print 'You have woken up form a long sleep. The last thing you remember was escaping the white gass that was spreading throughout the city'            
+        
+print 'You have woken up form a long sleep. The last thing you remember was escaping the white gass that was spreading throughout the city.' 
+           
 #BUILDING
+
 #THIRD FLOOR            
-Office = Building("Office", 'Papers have been shattered.', None, None, 'Conference', 'Secutary', None, None, None, None, None, None)
+Office = Building("Office", 'Papers have been shattered everywhere. The lights a flashing on and off. There next to you is a light blue paper. Type "pick up" to read what it says.', None, None, 'Conference', 'Secutary', None, None, None, None, None, None)
 Conference = Building("Conference Room", 'tables are shattered every where ', None, None, None, 'Elevator', 'Office',None, None, None, None, None)
 Elevator = Building("Elevator", '', None, 'Elevator2', None, None, 'Secutary Desk',None, None, None, None, None)
 Stairs = Building("Stairs", '', None, 'Stairs1', None, None, None,None, None, None, None, None)
@@ -45,7 +49,7 @@ Building('', '', None, None, None, None, None,None, None, None, None, None)
 #OUTSIDE 
 insurence_building=('', '', None, None, None, None, None,None, None, None, None, None)
 coffee_shop = ('', '', None, None, None, None, None,None, None, None, None, None)
-bank =('', '', None, None, None, None, None,None, None, None, None, None
+bank =('', '', None, None, None, None, None,None, None, None, None, None)
 
 node = Office
 
@@ -58,10 +62,15 @@ while True:
     print "Description: " + node.description 
     
     response = ['up', 'down', 'north', 'east', 'south', 'west', 'right', 'left', 'outside', 'inside'] 
+    pick = ['pick up']
     command = raw_input('>').strip().lower()
     #QUITE THE PROGRAM 
     if command in ['q', 'exit', 'quit']:
         sys.exit(0)
+    #paper read out 
+    if command in pick:
+        print 'Escape to th labatory hidden under the old facotry building.It should be located a couple of blocks\nwest of where you are located.'
+        print 'Head north or east'
     #MOVE INTO DIFFERNT ROOMS 
     if command in response:
         try:
