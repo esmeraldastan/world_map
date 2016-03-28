@@ -20,7 +20,7 @@ class Building:
     def move(self, direction):
         global node 
         node = globals()[getattr(self, direction)]
-            
+print 'You have woken up form a long sleep. The last thing you remember was escaping the white gass that was spreading throughout the city'            
 #BUILDING
 #THIRD FLOOR            
 Office = Building("Office", 'Papers have been shattered.', None, None, 'Conference', 'Secutary', None, None, None, None, None, None)
@@ -40,12 +40,12 @@ Office2 = Building('Office 2 ', '', None, None, None, 'Elevator', 'Stairs','Offi
 
 #FIRST FLOOR
 Front = Building('', '', None, None, None, None, None,None, None, None, None, None) 
-'''Door = Building('', '', None, None, None, None, None,None, None, None, None, None)
- Building('', '', None, None, None, None, None,None, None, None, None, None)
+Door = Building('', '', None, None, None, None, None,None, None, None, None, None)
+Building('', '', None, None, None, None, None,None, None, None, None, None)
 #OUTSIDE 
 insurence_building=('', '', None, None, None, None, None,None, None, None, None, None)
 coffee_shop = ('', '', None, None, None, None, None,None, None, None, None, None)
-bank =('', '', None, None, None, None, None,None, None, None, None, None)'''
+bank =('', '', None, None, None, None, None,None, None, None, None, None
 
 node = Office
 
