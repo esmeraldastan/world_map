@@ -35,8 +35,8 @@ print 'You have woken up form a long sleep. The last thing you remember was esca
 #THIRD FLOOR            
 Office = Building("Office", 'Papers have been shattered everywhere. The lights a\nflashing on and off. There next to you is a light blue paper. Type "pick up" to read what it says.', None, None, 'Conference', 'Secutary', None, None, None, None, None, None)
 Conference = Building("Conference Room", 'You are now standing in the Conference Room. A couple of bodies are laying around. Rottening with a nasty smell. There\'s a flashlight on the table. Pick it up...you might need it later on .', None, None, None, 'Elevator', 'Office',None, None, None, None, None)
-Elevator = Building("Elevator", 'In the Elevator head down to continue getting to your destination. Type "down".', None, 'Elevator2', None, None, 'Secutary Desk',None, None, None, None, None)
-Stairs = Building("Stairs", '', None, 'Stairs1', None, None, None,None, None, None, None, None)
+Elevator = Building("Elevator", 'In the Elevator head down to continue getting to your destination. Type "down".But wait before that you you need to restore to full health.There is a green cyrum laying on the grown. Type "restore" this will get you to full health. ', None, 'Elevator2', None, None, 'Secutary Desk',None, None, None, None, None)
+Stairs = Building("Stairs", 'The walls are coverd with blood. You are not alone. Zombies and infecteds run the area now. You don\'t want to encounter with one ...it can be your end. ', None, 'Stairs1', None, None, None,None, None, None, None, None)
 Secutary = Building("Secutary Desk", '', None, None, 'Elevator', None, None , None, None, None, None, None)
 
 Stairs1 = Building("Stairs", '', None, None, None, None, None,None, None, None, None, None)
