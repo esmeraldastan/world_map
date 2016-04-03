@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
+import time 
 import sys
 
 #Name of the Game 
+time.sleep(0.5)
 print "Welcome to CounterCode\n"
 
-print "Your obective in this game will be to get out of\nthe building to saftey outside the city.\n"  
+print "Your obective in this game will be to get out of\nthe building to safety.\n"  
 
 
 node = None 
@@ -29,7 +31,8 @@ class Building:#start of the map
         global node 
         node = globals()[getattr(self, direction)]
         
-print 'You have woken up form a long sleep. The last thing you remember was escaping\nthe white gass that was spreading throughout the city.' 
+#INTO TO THE GAME        
+print 'You have woken up from a long sleep. The last thing you remember was escaping\nthe white gas that was spreading throughout the city.' 
            
 #BUILDING
 
@@ -50,6 +53,7 @@ Bathroom = Building('Restroom', '', None, None, None, None, 'Stairs','Elevator',
 Office1 = Building('Office 1', '', None, None, 'Elevator', 'Office2', 'Janitor',None, None, None, None, None)
 Office2 = Building('Office 2 ', '', None, None, None, 'Elevator', 'Stairs','Office1', None, None, None, None)
 
+Stairs2 = Building("Stairs", 'You are now in the first floor. Zombies are following you down. Place the bomb in between the stairs and the front desk. Type "place". Once you do head out.', None, None, None, None, None,None, None, None, None, None)
 #FIRST FLOOR
 Front = Building('', '', None, None, None, None, None,None, None, None, None, None) 
 Door = Building('', '', None, None, None, None, None,None, None, None, None, None)
