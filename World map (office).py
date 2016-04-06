@@ -45,11 +45,12 @@ Secutary = Building("Secutary Desk",' You are standing next to your securary\'s 
 
 #PATH TO SECOND FLOOR
 Stairs1 = Building("Stairs", '', None, None, None, None, None,None, None, None, None, None)
+Elevator2 = Building("Elevator", 'You are now on the second floor', None, 'Elevator2', None, None, 'Secutary Desk',None, None, None, None, None)
 #SECOND FLOOR
-Weapon = Building('Weapon Room', '', None, None, None, None, 'Secret',None, None, None, None, None)
-Secret = Building('Secret Door', '', None, None, 'Weapon', 'Janitor', None,None, None, None, None, None)
+Weapon = Building('Weapon Room', 'A variaty of weapons are displayed. The the ones that you think will be useful. Remember thought there is a limit to what you can take', None, None, None, None, 'Secret',None, None, None, None, None)
+Secret = Building('Secret Door', 'Inorder to open the door you need to figure out the code', None, None, 'Weapon', 'Janitor', None,None, None, None, None, None)
 Janitor= Building('Janitor Room', '', None, None, None, 'Office1', 'Secret',None, None, None, None, None)
-Bathroom = Building('Restroom', '', None, None, None, None, 'Stairs','Elevator', None, None, None, None)
+Bathroom = Building('Restroom', 'The smell of rottening meat is rising in here. Get out before you get any sick from the smell ', None, None, None, None, 'Stairs','Elevator', None, None, None, None)
 Office1 = Building('Office 1', '', None, None, 'Elevator', 'Office2', 'Janitor',None, None, None, None, None)
 Office2 = Building('Office 2 ', '', None, None, None, 'Elevator', 'Stairs','Office1', None, None, None, None)
 
@@ -60,7 +61,7 @@ Door = Building('', '', None, None, None, None, None,None, None, None, None, Non
 Building('', '', None, None, None, None, None,None, None, None, None, None)
 #OUTSIDE 
 insurence_building=('', '', None, None, None, None, None,None, None, None, None, None)
-coffee_shop = ('', '', None, None, None, None, None,None, None, None, None, None)
+coffee_shop = ('Coffee Shop', 'You are now standing inforn of a coffee shop. If you are low on health head inside to restore it. If not confinue..\nHead "west"', None, None, None, None, None,None, None, None, None, None)
 bank =('', '', None, None, None, None, None,None, None, None, None, None)
 
 node = Office
