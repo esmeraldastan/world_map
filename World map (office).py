@@ -50,7 +50,7 @@ Elevator2 = Building("Elevator", 'You are now on the second floor', None, 'Eleva
 Office1 = Building('Office 1', 'There seems nothing to be in here help you defeat the infected.\nHead "west" into the other office. There might be something in there', None, None, 'Elevator', 'Office2', 'Janitor',None, None, None, None, None)
 Weapon = Building('Weapon Room', 'A variaty of weapons are displayed. The the ones that you think will be useful. Remember thought there is a limit to what you can take', None, None, None, None, 'Secret',None, None, None, None, None)
 Secret = Building('Secret Door', 'Inorder to open the door you need to figure out the code', None, None, 'Weapon', 'Janitor', None,None, None, None, None, None)
-Janitor= Building('Janitor Room', '', None, None, None, 'Office1', 'Secret',None, None, None, None, None)
+Janitor= Building('Janitor Room', 'Cleaning applicances are scattered everywhere. Within the room ther is another door.\nWEAPONS\n it reads. Figure out the passcode to get in.', None, None, None, 'Office1', 'Secret',None, None, None, None, None)
 Bathroom = Building('Restroom', 'The smell of rottening meat is rising in here. Get out before you get any sick from the smell ', None, None, None, None, 'Stairs','Elevator', None, None, None, None)
 
 Office2 = Building('Office 2 ', '', None, None, None, 'Elevator', 'Stairs','Office1', None, None, None, None)
