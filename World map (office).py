@@ -46,12 +46,14 @@ Secutary = Building("Secutary Desk",' You are standing next to your securary\'s 
 #PATH TO SECOND FLOOR
 Stairs1 = Building("Stairs", 'Pieces from the ceiling fell blocking your path. Find another path to reach out into saftey', None, None, None, None, None,None, None, None, None, None)
 Elevator2 = Building("Elevator", 'You are now on the second floor', None, 'Elevator2', None, None, None,None, 'Office1', None, None, None)
+
+
+
 #SECOND FLOOR
 Office1 = Building('Office 1', 'There seems nothing to be in here help you defeat the infected.\nHead "west" into the other office. There might be something in there', None, None, 'Elevator', 'Office2', 'Janitor',None, None, None, None, None)
 Weapon = Building('Weapon Room', 'A variaty of weapons are displayed. The the ones that you think will be useful. Remember thought there is a limit to what you can take', None, None, None, None, 'Secret',None, None, None, None, None)
 Secret = Building('Secret Door', 'Inorder to open the door you need to figure out the code', None, None, 'Weapon', 'Janitor', None,None, None, None, None, None)
 Janitor= Building('Janitor Room', 'Cleaning applicances are scattered everywhere. Within the room ther is another door.\nWEAPONS\n it reads. Figure out the passcode to get in.', None, None, None, 'Office1', 'Secret',None, None, None, None, None)
-
 Bathroom = Building('Restroom', 'The smell of rottening meat is rising in here. Place the first bomb in here. ', None, None, None, None, 'Stairs','Elevator', None, None, None, None)
 
 Office2 = Building('Office 2 ', '', None, None, None, 'Elevator', 'Stairs','Office1', None, None, None, None)
@@ -59,8 +61,8 @@ Office2 = Building('Office 2 ', '', None, None, None, 'Elevator', 'Stairs','Offi
 Stairs2 = Building("Stairs", 'You are now in the first floor. Zombies are following you down. Place the bomb in between the stairs and the front desk. Type "place". Once you do head out.', None, None, None, None, None,None, None, None, None, None)
 #FIRST FLOOR
 Front = Building('', '', None, None, None, None, None,None, None, None, None, None) 
-Door = Building('', '', None, None, None, None, None,None, None, None, None, None)
-Building('', '', None, None, None, None, None,None, None, None, None, None)
+#Door = Building('', '', None, None, None, None, None,None, None, None, None, None)
+#Building('', '', None, None, None, None, None,None, None, None, None, None)
 #OUTSIDE 
 Enterence=('Enterence', 'BOOM!!!Peices of glass shattering everywhere. Bodies flying in the sky. Luckly you have made it out saftly. It won\'t be easy now to make it you your destination with infecteds and zombies around.', None, None, None, None, None,None, None, None, None, None)
 coffee = ('Coffee Shop', 'You are now standing inforn of a coffee shop. If you are low on health head inside to restore it. If not confinue..\nHead "west"', None, None, None, None, None,None, None, None, None, None)
